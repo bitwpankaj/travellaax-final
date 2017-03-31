@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  destination: MyString
+  description_short: MyText
+  description_full: MyText
+  price: 1.5
+  agent: MyString
+
+two:
+  destination: MyString
+  description_short: MyText
+  description_full: MyText
+  price: 1.5
+  agent: MyString
