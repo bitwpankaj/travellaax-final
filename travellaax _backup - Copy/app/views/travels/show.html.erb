@@ -1,0 +1,17 @@
+<h2><%= @travel.destination%></h2>
+<h3><%= @travel.price%></h3>
+<h4>Category:<%=  @travel.category.name%></h4>
+<p><%= @travel.description_full%></p>
+<p><span style="font-style: italic;" ><%= @travel.agent%></span></p>
+<%= image_tag @travel.travel_img_url.to_s %>
+<br/>
+<%= link_to "Back", root_path%>
+
+<% if user_signed_in? %>
+	
+  <% if current_user.id === 1 %>
+	<%= link_to "Edit", edit_travel_path(@travel)%>
+    <%= link_to "Delete", travel_path(@travel), method: :delete, data: {confirm: "Are you sure ?"} %>
+
+ <% end %>
+<% end %>

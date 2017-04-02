@@ -1,0 +1,11 @@
+<%= simple_form_for @travel do |f| %>
+  <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select ad category") %>
+  <%= f.file_field :travel_img %>
+  <%= f.input :destination, label: "Destination" %>
+  <%= f.input :description_short %>
+  <%= f.input :description_full %>
+  <%= f.input :price %>
+  <%= f.input :agent%>
+  <%= f.button :submit%>
+
+  <% end %>
